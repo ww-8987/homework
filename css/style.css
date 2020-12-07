@@ -1,0 +1,143 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+.jumbotron {
+    height: 400px;
+    width: 100%;
+}
+
+#header {
+    background-image: url(https://10wallpaper.com/wallpaper/medium/1911/Travel_Pier_Bungalow_Buildings_2019_Naturescape_medium.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0;
+    border-radius: 0;
+    position: relative;
+
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    filter: grayscale(100%);
+}
+
+[id^='galleryImage']>.galleryText {
+    color: white;
+    line-height: 250px;
+    font-size: 6px;
+    opacity: 0;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+[id^='galleryImage'],
+.galleryText {
+    transition: all .3s ease-in-out;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.galleryText {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/galleryImage1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/galleryImage2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/galleryImage3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/galleryImage4.jpg');
+}
+
+#galleryImage5 {
+    background-image: url('../img/galleryImage5.jpg');
+}
+
+#galleryImage6 {
+    background-image: url('../img/galleryImage6.jpg');
+}
+
+#galleryImage7 {
+    background-image: url('../img/galleryImage7.jpg');
+}
+
+#galleryImage8 {
+    background-image: url('../img/galleryImage8.jpg');
+}
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
